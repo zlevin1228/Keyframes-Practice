@@ -1,0 +1,32 @@
+body {
+  background-color: gray;
+}
+
+.div1 {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  background-color: lime;
+  animation: MATRIX;
+  animation-duration:10s;
+  animation-iteration-count: infinite;
+  position: relative;
+  animation-direction: alternate;
+  top:200px;
+  
+}
+
+@keyframes MATRIX {
+  0% {
+    background-color: lime;
+  }
+
+  50% {
+    transform: matrix(18,7,16,6,22,8);
+    background-color: blue;
+  }
+
+  100%{
+    transform: translateY(-20px);
+  }
+}
